@@ -1,0 +1,29 @@
+name: 'Regenerate README.md'
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+jobs:
+  generate:
+    runs-on: 'ubuntu-latest'
+    # Grant the GITHUB_TOKEN permissions to write to the repository.
+    permissions:
+      contents: 'write'
+    steps:
+      - name: 'Checkout'
+        uses: 'actions/checkout@v4'
+      - name: 'Set up Go'
+        uses: 'actions/setup-go@v5'
+        with:
+          go-version-file: 'go.mod'
+      - name: 'Generate README.md'
+        run: 'go tool generate'
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - name: 'Commit and push if changed'
+        uses: 'stefanzweifel/git-auto-commit-action@v6'
+        with:
+          commit_message: 'README.md: regenerate'
+          file_pattern: 'README.md'
+          commit_user_name: 'GitHub Actions'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
