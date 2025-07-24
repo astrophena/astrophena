@@ -39,7 +39,7 @@ func run(ctx context.Context) error {
 
 	repos, err := request.Make[[]repo](ctx, request.Params{
 		Method: http.MethodGet,
-		URL:    "https://api.github.com/user/repos",
+		URL:    "https://api.github.com/users/astrophena/repos",
 		Headers: map[string]string{
 			"Authorization": "Bearer " + token,
 		},

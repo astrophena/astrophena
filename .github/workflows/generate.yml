@@ -5,6 +5,7 @@ on:
     - cron: '0 8 * * *'
 jobs:
   generate:
+    name: 'Generate'
     runs-on: 'ubuntu-latest'
     # Grant the GITHUB_TOKEN permissions to write to the repository.
     permissions:
