@@ -1,6 +1,6 @@
+github.com/benbjohnson/hashfs v0.2.2 h1:vFZtksphM5LcnMRFctj49jCUkCc7wp3NP6INyfjkse4=
+github.com/benbjohnson/hashfs v0.2.2/go.mod h1:7OMXaMVo1YkfiIPxKrl7OXkUTUgWjmsAKyR+E6xDIRM=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
 github.com/google/go-cmp v0.7.0/go.mod h1:pXiqmnSA92OHEEa9HXL2W4E7lf9JzCmGVUdgjX3N/iU=
-go.astrophena.name/base v0.8.1 h1:zd3iUiWXl77P3Ly4j2i0RNxWJF2XbnAYtoZvwtJlc/Y=
-go.astrophena.name/base v0.8.1/go.mod h1:T/invkmClQ3p5MvR2PLZ/6nemryWpxnP4Hu0F9H0ynQ=
 go.astrophena.name/base v0.8.2-0.20250724161251-08d4d0c48b1b h1:+Gh+TCROi7BLakVUO6qQacvY/ZRnk19BLGScAPdeheQ=
 go.astrophena.name/base v0.8.2-0.20250724161251-08d4d0c48b1b/go.mod h1:T/invkmClQ3p5MvR2PLZ/6nemryWpxnP4Hu0F9H0ynQ=
