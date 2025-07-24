@@ -67,9 +67,8 @@ func run(ctx context.Context) error {
 		}
 		fmt.Fprintf(&sb, "- [%s](%s) — %s.\n", repo.Name, repo.URL, lowercaseFirst(repo.Description))
 	}
-	sb.WriteString("\n")
 
-	return os.WriteFile("README.md", []byte(strings.TrimSpace(sb.String())), 0o644)
+	return os.WriteFile("README.md", []byte(sb.String()), 0o644)
 }
 
 func lowercaseFirst(s string) string {
