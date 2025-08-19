@@ -1,7 +1,7 @@
 module go.astrophena.name/astrophena
 
-go 1.24.5
+go 1.25
 
-require go.astrophena.name/base v0.9.2
+require go.astrophena.name/base v0.10.0
 
 tool go.astrophena.name/astrophena/internal/generate
