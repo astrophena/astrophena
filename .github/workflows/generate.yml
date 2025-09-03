@@ -21,10 +21,18 @@ jobs:
         run: 'go tool generate'
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - name: 'Configure Git'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: 'Commit and push if changed'
-        uses: 'stefanzweifel/git-auto-commit-action@v6'
-        with:
-          commit_message: 'README.md: regenerate'
-          file_pattern: 'README.md'
-          commit_user_name: 'GitHub Actions'
-          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+        run: |
+          # Check if the README.md file was modified.
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            echo "Changes detected in README.md. Committing..."
+            git add README.md
+            git commit -m "README.md: regenerate"
+            git push
+          else
+            echo "No changes to commit."
+          fi
