@@ -2,7 +2,7 @@ module go.astrophena.name/astrophena
 
 go 1.25
 
-require go.astrophena.name/base v0.12.2
+require go.astrophena.name/base v0.12.3
 
 require (
 	github.com/lmittmann/tint v1.1.2 // indirect
