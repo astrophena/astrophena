@@ -11,3 +11,4 @@ See my [personal website](https://astrophena.name).
 - [codespaces](https://github.com/astrophena/codespaces) — preferences for various tools on GitHub Codespaces.
 - [site](https://github.com/astrophena/site) — personal website.
 - [tools](https://github.com/astrophena/tools) — personal tools.
+- [tsid](https://github.com/astrophena/tsid) — authenticate Tailscale users with Caddy.
