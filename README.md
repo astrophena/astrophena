@@ -8,7 +8,6 @@ See my [personal website](https://astrophena.name).
 
 - [base](https://github.com/astrophena/base) — base Go packages for my projects.
 - [cloudshell](https://github.com/astrophena/cloudshell) — connect to Google Cloud Shell from your terminal.
-- [codespaces](https://github.com/astrophena/codespaces) — preferences for various tools on GitHub Codespaces.
 - [site](https://github.com/astrophena/site) — personal website.
 - [tools](https://github.com/astrophena/tools) — personal tools.
 - [tsid](https://github.com/astrophena/tsid) — authenticate Tailscale users with Caddy.
